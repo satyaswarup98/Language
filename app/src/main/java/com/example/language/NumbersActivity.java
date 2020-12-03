@@ -1,5 +1,6 @@
 package com.example.language;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,20 +15,24 @@ import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
 
+    MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
+
+
 //        LinearLayout myLin   = (LinearLayout) findViewById(R.id.mylayout);
 
         ArrayList<Word> number = new ArrayList<Word>();
 
-        number.add(new Word("One", "ek"));
-        number.add(new Word("Two", "do"));
-        number.add(new Word("Three", "teen"));
-        number.add(new Word("Four","char"));
-        number.add(new Word("Five","panch"));
+        number.add(new Word("One", "ek", R.mipmap.ic_launcher));
+        number.add(new Word("Two", "do", R.mipmap.ic_launcher));
+        number.add(new Word("Three", "teen", R.mipmap.ic_launcher));
+        number.add(new Word("Four","char", R.mipmap.ic_launcher));
+        number.add(new Word("Five","panch", R.mipmap.ic_launcher));
 
         WordAdapter list = new WordAdapter(this, number);
 
@@ -38,9 +43,12 @@ public class NumbersActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                mediaPlayer = MediaPlayer.create(NumbersActivity.this, R.raw.song);
+                mediaPlayer.start();
             }
         });
+
+
 
     }
 }
