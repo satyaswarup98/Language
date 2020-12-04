@@ -7,49 +7,70 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/numbers"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Numbers"
-        android:background="#ff9914"
-        android:padding="24dp"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"/>
 
-    <TextView
-        android:id="@+id/family"
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Family Member"
-        android:background="#0bba11"
-        android:padding="24dp"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:id="@+id/viewpager"
 
-    <TextView
-        android:id="@+id/colours"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Colours"
-        android:background="#680bba"
-        android:padding="24dp"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/phrases"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Phrases"
-        android:background="#9e0000"
-        android:padding="24dp"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"/>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            app:tabIndicatorHeight="2dp"
+            app:tabIndicatorColor="@color/tan_background"
+            app:tabSelectedTextColor="@color/tan_background"
+            app:tabTextColor="@color/primary_dark_color_faded"
+            android:background="@color/primary_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/numbers"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Numbers"-->
+<!--        android:background="#ff9914"-->
+<!--        android:padding="24dp"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/family"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Family Member"-->
+<!--        android:background="#0bba11"-->
+<!--        android:padding="24dp"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/colours"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Colours"-->
+<!--        android:background="#680bba"-->
+<!--        android:padding="24dp"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/phrases"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Phrases"-->
+<!--        android:background="#9e0000"-->
+<!--        android:padding="24dp"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"/>-->
 
 
 

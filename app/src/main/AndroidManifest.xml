@@ -22,12 +22,6 @@
         <activity
             android:name=".FamilyActivity"
             android:label="Family Members" />
-        <activity
-            android:name=".ColoursActivity"
-            android:label="Colours" />
-        <activity
-            android:name=".PhrasesActivity"
-            android:label="Phrases" />
     </application>
 
 </manifest>
