@@ -20,19 +20,19 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new NumberFragment();
         }
-//        else if (position == 1) {
-//            return new PhrasesFragment();
-//        } else if (position == 2) {
-//            return new ColorsFragment();
-//        }
-        else {
+        else if (position == 1) {
             return new FamilyFragment();
+        } else if (position == 2) {
+            return new ColorFragment();
+        }
+        else {
+            return new PhraseFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 2; //change
+        return 4; //change
     }
 
     @Override
@@ -40,13 +40,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return mContext.getString(R.string.category_numbers);
         }
-//        else if (position == 1) {
-//            return mContext.getString(R.string.category_phrases);
-//        } else if (position == 2) {
-//            return mContext.getString(R.string.category_colors);
-//        }
-        else {
+        else if (position == 1) {
             return mContext.getString(R.string.category_family);
+        } else if (position == 2) {
+            return mContext.getString(R.string.category_colors);
+        }
+        else {
+            return mContext.getString(R.string.category_phrases);
         }
     }
 }

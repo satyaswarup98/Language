@@ -7,11 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:id="@+id/viewpager"
-
         android:layout_height="match_parent">
 
         <com.google.android.material.tabs.TabLayout
@@ -26,53 +24,5 @@
             android:layout_gravity="top" />
 
     </androidx.viewpager.widget.ViewPager>
-
-
-    <!--    <TextView-->
-<!--        android:id="@+id/numbers"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Numbers"-->
-<!--        android:background="#ff9914"-->
-<!--        android:padding="24dp"-->
-<!--        android:textSize="22sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textColor="@color/white"/>-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/family"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Family Member"-->
-<!--        android:background="#0bba11"-->
-<!--        android:padding="24dp"-->
-<!--        android:textSize="22sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textColor="@color/white"/>-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/colours"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Colours"-->
-<!--        android:background="#680bba"-->
-<!--        android:padding="24dp"-->
-<!--        android:textSize="22sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textColor="@color/white"/>-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/phrases"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Phrases"-->
-<!--        android:background="#9e0000"-->
-<!--        android:padding="24dp"-->
-<!--        android:textSize="22sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textColor="@color/white"/>-->
-
-
-
 
 </LinearLayout>

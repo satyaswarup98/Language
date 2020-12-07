@@ -34,17 +34,16 @@ public class NumberFragment extends Fragment {
         View rootView =  inflater.inflate(R.layout.word_list, container, false);
 
         number = new ArrayList<Word>();
-
-        number.add(new Word("One", "Ek", R.drawable.number_one,R.raw.song));
-        number.add(new Word("Two", "Do", R.drawable.number_two,R.raw.song));
-        number.add(new Word("Three", "Teen", R.drawable.number_three,R.raw.song));
-        number.add(new Word("Four","Chaar", R.drawable.number_four,R.raw.song));
-        number.add(new Word("Five","Paanch", R.drawable.number_five,R.raw.song));
-        number.add(new Word("Six","Chhah", R.drawable.number_six,R.raw.song));
-        number.add(new Word("Seven","Saat", R.drawable.number_seven,R.raw.song));
-        number.add(new Word("Eight","Aath", R.drawable.number_eight,R.raw.song));
-        number.add(new Word("Nine","Nau", R.drawable.number_nine,R.raw.song));
-        number.add(new Word("Ten","Dus", R.drawable.number_ten,R.raw.song));
+        number.add(new Word("One", "Ek", R.drawable.number_one,R.raw.one));
+        number.add(new Word("Two", "Do", R.drawable.number_two,R.raw.two));
+        number.add(new Word("Three", "Teen", R.drawable.number_three,R.raw.three));
+        number.add(new Word("Four","Chaar", R.drawable.number_four,R.raw.four));
+        number.add(new Word("Five","Paanch", R.drawable.number_five,R.raw.five));
+        number.add(new Word("Six","Chhah", R.drawable.number_six,R.raw.six));
+        number.add(new Word("Seven","Saat", R.drawable.number_seven,R.raw.seven));
+        number.add(new Word("Eight","Aath", R.drawable.number_eight,R.raw.eight));
+        number.add(new Word("Nine","Nau", R.drawable.number_nine,R.raw.nine));
+        number.add(new Word("Ten","Dus", R.drawable.number_ten,R.raw.ten));
 
         WordAdapter list = new WordAdapter(getActivity(), number,R.color.category_numbers);
         //change

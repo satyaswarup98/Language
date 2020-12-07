@@ -17,9 +17,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NumbersActivity"
-            android:label="Numbers" />
-        <activity
             android:name=".FamilyActivity"
             android:label="Family Members" />
     </application>

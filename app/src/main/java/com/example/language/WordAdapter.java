@@ -40,7 +40,13 @@ public class WordAdapter extends ArrayAdapter<Word> {
         hin_tv.setText(currentWord.getHin());
 
         ImageView img_view = (ImageView) listItemView.findViewById(R.id.img_view);
-        img_view.setImageResource(currentWord.getImg());
+
+        if(currentWord.hasImg()) {
+            img_view.setImageResource(currentWord.getImg());
+            img_view.setVisibility(View.VISIBLE);
+        }else{
+            img_view.setVisibility(View.GONE);
+        }
 
         RelativeLayout back = (RelativeLayout) listItemView.findViewById(R.id.mycard);
 
