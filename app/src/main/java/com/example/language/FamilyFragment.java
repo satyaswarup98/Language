@@ -38,12 +38,12 @@ public class FamilyFragment extends Fragment {
         number.add(new Word("Father", "Pita Jee", R.drawable.family_father,R.raw.father));
         number.add(new Word("Mother", "Maan", R.drawable.family_mother,R.raw.mother));
         number.add(new Word("Son", "Beta", R.drawable.family_son,R.raw.son));
-        number.add(new Word("Daughter", "betee", R.drawable.family_daughter,R.raw.daughter));
+        number.add(new Word("Daughter", "Betee", R.drawable.family_daughter,R.raw.daughter));
         number.add(new Word("Older Brother", "Bada Bhaee", R.drawable.family_older_brother,R.raw.older_brother));
         number.add(new Word("Younger Brother", "Chota Bhaee", R.drawable.family_younger_brother,R.raw.younger_brother));
         number.add(new Word("Older Sister","Badee Bahan", R.drawable.family_older_sister,R.raw.older_sister));
         number.add(new Word("Younger Sister","Chotee Bahan", R.drawable.family_younger_sister,R.raw.younger_sister));
-        number.add(new Word("Grandfather","Daada", R.drawable.family_grandfather,R.raw.grandfather));
+        number.add(new Word("Grandfather","Daada Jee", R.drawable.family_grandfather,R.raw.grandfather));
         number.add(new Word("Grandmother","Daadee Ma", R.drawable.family_grandmother,R.raw.grandmother));
 
         WordAdapter list = new WordAdapter(getActivity(), number,R.color.category_family);

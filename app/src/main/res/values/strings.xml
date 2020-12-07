@@ -2,8 +2,8 @@
     <string name="app_name">Language</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="category_numbers">Numbers</string>
-    <string name="category_colors">Colors</string>
-    <string name="category_phrases">Phrases</string>
+    <string name="category_numbers">Number</string>
+    <string name="category_colors">Color</string>
+    <string name="category_phrases">Phrase</string>
     <string name="category_family">Family</string>
 </resources>
